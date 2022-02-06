@@ -21,12 +21,12 @@ Linkage of High level to Low level
 4. Search Customer
 
 # Benefits
-Required very little manpower.
-Simplify the problem of editing.
-Maintain the clearance level by the hierarchy.
-Maintain data integrity Validate the manual calculations avoid calculation error.
-Safeguard the data accuracy.
-User Friendly
+1. Required very little manpower.
+2. Simplify the problem of editing.
+3. Maintain the clearance level by the hierarchy.
+4. Maintain data integrity Validate the manual calculations avoid calculation error.
+5. Safeguard the data accuracy.
+6. User Friendly
 
 
 # SWOT ANALYSIS
