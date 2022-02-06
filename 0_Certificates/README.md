@@ -10,6 +10,10 @@
 
 3. Screenshot of Github Learning
 
+![Screenshot (101)](https://user-images.githubusercontent.com/98818228/152687576-aaae4ba1-2119-4eff-8f26-626bb5f5d56d.png)
+
+![Screenshot (102)](https://user-images.githubusercontent.com/98818228/152687594-1f235443-48fe-468a-8b3a-0d88d32b53c4.png)
 
 
 4. Screenshot HackerEarth Points
+![hacker](https://user-images.githubusercontent.com/98818228/152688100-d92de36e-3cff-4542-a25c-edac17a11563.PNG)
