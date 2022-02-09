@@ -1,26 +1,19 @@
 # Introduction
 
+This system is basically designed for storing the banking details. The whole system is designed by C programming language. It develops the general idea of how the bank details of customers are stored like their name, address, contact number and so many other details. The user interface is quite a simple with normal screen design so that employees can easily get familiar with it.
 
 # Requirements
 
+1. Manage Customers Information
+2. Manage Bank Records
+3. Withdraw money
+4. Deposit money
+5. create different types of accounts (Savings,current)
+6. Search accounts
 
-# High Level Requirements
-
- Features of my project
-
-
-# Low Level Requirements
-How each feature is implemented
-Linkage of High level to Low level
-
-
-# Features
-1. Print the Account number and name and balance of each customer.
-2. Withdraw money
-3. Deposit money
-4. Search Customer
 
 # Benefits
+
 1. Required very little manpower.
 2. Simplify the problem of editing.
 3. Maintain the clearance level by the hierarchy.
@@ -30,16 +23,24 @@ Linkage of High level to Low level
 
 
 # SWOT ANALYSIS
+/////////
 
+## 4W's and 1'H
 
-# 4W's and 1'H
-
-# Who
+## Who
 Banks
-# What
+## What
+This bank management system is based on bank requirements. The system can encode customer information. Banking admin can have access to the customer status and information of different accounts. Users can create account, deposit and withdraw amount.
 
-# When
+## When
+When we want to Safeguard the data accuracy.
+When we want to reduce calculation error and manual work.
+When user wants to carry out the tasks quickly.
 
-# Where
 
-# How
+## Where
+In the banks 
+
+## How
+
+We can implement this to do the basic banking activities and the admin can keep the track of all the records and about customer details. And customers can deposit , withdraw and create different types of accounts.
