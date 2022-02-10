@@ -4,12 +4,18 @@ This system is basically designed for storing the banking details. The whole sys
 
 # Requirements
 
+## High level requirements
 1. Manage Customers Information
 2. Manage Bank Records
 3. Withdraw money
 4. Deposit money
 5. create different types of accounts (Savings,current)
 6. Search accounts
+
+## Low level requirements
+1. Add the customer id, name, amount.
+2. Search the customer details by using their user id.
+3. Deposit and withdraw amount by user id.
 
 
 # Benefits
