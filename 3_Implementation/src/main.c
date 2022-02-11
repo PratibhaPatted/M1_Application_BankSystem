@@ -10,7 +10,7 @@ struct user_details user[300];
 int main()
 
 {
-    int num,n, count=0 , i, userid, amt;
+    int num,n, count=0 , i, userid, amt, inputamount, withdrawamount;
     bool loop = true;
     while (loop)
     {
@@ -51,15 +51,38 @@ int main()
                 goto b;
             case 1:
                 user[count].id=count+1;
-                printf("Enter  name : ");
+
+                printf("Enter  name : "); //not empty 
                 scanf("%s",user[count].name);
-                printf("Enter Amount : ");
-                scanf("%d",&user[count].amount);
-                printf("Type SA for Savings Account \t CA for Current Account \t FD for Fixed deposit Account\n");
-                printf("Enter account type :");
-                scanf("%s",user[count].acccounttype);
+
+                c: printf("Enter Amount : ");
+                scanf("%d",&inputamount);
+
+                if(inputamount <= 0)   //-1 nt allowed
+			       {
+                       printf("%d invalid \n",inputamount);  
+                       goto c;
+                       
+                   }
+                user[count].amount = inputamount;
+
+                d: printf("Enter account type :\n");
+                printf("Types: \n SA for Savings Account, \t CA for Current Account, \t FD for Fixed deposit Account\n");
+                
+                scanf("%s",user[count].acccounttype); //xyz not valid
+
+                if(strcmp(user[count].acccounttype,"SA")==0|| strcmp(user[count].acccounttype,"CA")==0 || strcmp(user[count].acccounttype,"FD")==0)   
+                {
+                    printf("valid  \n");  
+                }
+                else
+                {
+                    printf("invalid \n");
+                    goto d;
+                }
+
                 printf("\n*************************************\n");
-	            printf("User Created");
+	            printf("User Created ");
                 
                 displayUsers(user[count].id, user[count].name, user[count].amount, user[count].acccounttype);
             
@@ -94,10 +117,17 @@ int main()
     
                 displayUsers(user[userid-1].id, user[userid-1].name, user[userid-1].amount, user[userid-1].acccounttype);
                 
-                printf("\nEnter amount to withdraw : ");
+                e: printf("\nEnter amount to withdraw : ");
                 scanf("%d",&amt);
-                user[userid-1].amount=user[userid-1].amount - amt;
+                
 
+                if(user[userid-1].amount < amt)   //if deposit<withdraw not allowed
+                {
+                    printf("waithdraw invalid  \n\n");  
+                    goto e;
+                }
+                user[userid-1].amount=user[userid-1].amount - amt;
+    
                 printf("Successfully withdrawed ! \n");
                 printf("User new balance is %d \n\n", user[userid-1].amount);
 
