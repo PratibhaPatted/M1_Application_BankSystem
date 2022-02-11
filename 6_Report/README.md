@@ -110,3 +110,14 @@ We can implement this to do the basic banking activities and the admin can keep 
 ![10](https://user-images.githubusercontent.com/98818228/153588508-d0c575c3-82ae-4ac7-a482-fc547e95a20d.PNG)
 
 ![11](https://user-images.githubusercontent.com/98818228/153588542-1e52a25f-2229-46af-a582-fde3b6705300.PNG)
+
+
+# Test Plan and Test Ouput
+
+![12](https://user-images.githubusercontent.com/98818228/153596224-cd5ee64b-b632-4e2c-a53f-6b39912161a6.PNG)
+
+# References
+
+https://github.com/stepin654321/MiniProject_Template
+
+https://www.lovelycoding.org/banking-management-system/
