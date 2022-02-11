@@ -1,6 +1,6 @@
 # Introduction
 
-This system is basically designed for storing the banking details. The whole system is designed by C programming language. It develops the general idea of how the bank details of customers are stored like their name, address, contact number and so many other details. The user interface is quite a simple with normal screen design so that employees can easily get familiar with it.
+This system is primarily intended for the storage of banking information. The C programming language was used to create the entire system. It establishes a basic notion of how clients' bank details, such as their name, address, phone number, and other information, are preserved. The user interface is straightforward, with a standard screen design, so staff may quickly become accustomed to it.
 
 # Requirements
 
@@ -9,7 +9,7 @@ This system is basically designed for storing the banking details. The whole sys
 2. Manage Bank Records
 3. Withdraw money
 4. Deposit money
-5. create different types of accounts (Savings,current)
+5. create different types of accounts (Savings,current,Fixed deposit)
 6. Search accounts
 
 ## Low level requirements
