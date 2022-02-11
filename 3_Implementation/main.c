@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "user.c"
 #include "display.c"
-
+#include<unity.h>
 struct user_details user[300];
 
 int main()
