@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build
-      run: gcc main.c -o main.exe
+      run: gcc hello.c -o hello.exe
     - name: Run
-      run: ./a.exe
+      run: ./hello.exe
