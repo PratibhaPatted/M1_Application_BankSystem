@@ -10,7 +10,7 @@ struct user_details user[300];
 int main()
 
 {
-    int num,n, count=0 , i, userid, amt, inputamount;
+    int num,n, count=0 , i, userid, amt, inputamount, withdrawamount;
     bool loop = true;
     while (loop)
     {
@@ -117,10 +117,17 @@ int main()
     
                 displayUsers(user[userid-1].id, user[userid-1].name, user[userid-1].amount, user[userid-1].acccounttype);
                 
-                printf("\nEnter amount to withdraw : ");
+                e: printf("\nEnter amount to withdraw : ");
                 scanf("%d",&amt);
-                user[userid-1].amount=user[userid-1].amount - amt;
+                
 
+                if(user[userid-1].amount < amt)   //if deposit<withdraw not allowed
+                {
+                    printf("waithdraw invalid  \n\n");  
+                    goto e;
+                }
+                user[userid-1].amount=user[userid-1].amount - amt;
+    
                 printf("Successfully withdrawed ! \n");
                 printf("User new balance is %d \n\n", user[userid-1].amount);
 
