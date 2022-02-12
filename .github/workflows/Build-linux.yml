@@ -1,10 +1,10 @@
-name: Build-linux
+name: Linux C/C++ CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make
-      run: make Run -C 3_Implementation
+    - name: build
+      run: gcc main.c -o all.out
+    - name: Run
+      run: ./all.out
