@@ -1,8 +1,10 @@
-#Target_name : Dependencies
-#<TAB>Command
-SRC = src/main.c
-INC = inc
+#TargetName : Dependencies
+#<TAB>commands
 
+PROJ_NAME= Bank
+SRC=src/main.c 
+
+#To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
    RM = del /q
    FixPath = $(subst /,\,$1)
@@ -15,11 +17,13 @@ else
    endif
 endif
 
-all.out : $(SRC)
-	gcc $^ -I$(INC) -o $@
+Build : $(SRC)
+	gcc $(SRC) -Iinc -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
 
-run: target
-	./all.out
+Run : Build
+	./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
-clean:
-	rm all.out
+Clean:
+	$(RM) $(call FixPath,$(PROJ_NAME).$(EXEC))
+
+
