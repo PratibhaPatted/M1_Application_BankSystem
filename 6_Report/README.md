@@ -29,7 +29,8 @@ This system is primarily intended for the storage of banking information. The C 
 
 
 # SWOT ANALYSIS
-/////////
+![swot](https://user-images.githubusercontent.com/98818228/154980738-04154de1-887f-449a-9271-ec452c6d0dd9.PNG)
+
 
 ## 4W's and 1'H
 
