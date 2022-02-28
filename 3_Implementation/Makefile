@@ -37,6 +37,5 @@ coverage:
 	gcov -a ./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
 
-
 Clean:
 	$(RM) $(call FixPath,$(PROJ_NAME).$(EXEC))
