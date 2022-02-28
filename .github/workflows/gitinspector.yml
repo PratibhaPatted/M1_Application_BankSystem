@@ -15,8 +15,10 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: '0'
+
     - name: Install python
       run: sudo apt -y install python
+
     - name: Install gitinspector
       run: | 
         pushd ~ &> /dev/null
@@ -24,6 +26,7 @@ jobs:
         cd gitinspector
         echo "export PATH=$(pwd):"'$PATH' >> ~/.profile
         popd &> /dev/null
+        
     - name: Run gitinspector
       run: |
         source ~/.profile
