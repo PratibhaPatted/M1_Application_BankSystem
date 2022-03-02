@@ -15,3 +15,5 @@ https://api.codiga.io/project/30976/status/svg
 
 
 [![Contribution Check - Git Inspector](https://github.com/PratibhaPatted/M1_Application_BankSystem/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/PratibhaPatted/M1_Application_BankSystem/actions/workflows/gitinspector.yml)
+
+[![CI](https://github.com/PratibhaPatted/M1_Application_BankSystem/actions/workflows/Cl.yml/badge.svg)](https://github.com/PratibhaPatted/M1_Application_BankSystem/actions/workflows/Cl.yml)
